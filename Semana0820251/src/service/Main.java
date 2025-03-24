@@ -3,20 +3,29 @@ package service;
 import java.util.Scanner;
 
 public class Main {
+	static int lado;
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 
+		lado = 0;
+
 		System.out.println("Hola, este es mi primer proyecto");
 		int numero = 2;
+		String nombre;
+
 		if (numero >= 70) {
+
 			System.out.println("El numero es mayor o igual a 70");
 		} else {
+			nombre = "";
 			System.out.println("El numero no es mayor a 70");
 		}
 
 		String respuesta = "";
+
 		do {
+
 			System.out.println("Quiere continuar?");
 			respuesta = scan.next();
 		} while (!respuesta.equals("no"));
@@ -30,7 +39,7 @@ public class Main {
 			contador = contador + 1;
 			// contador++;
 		}
-		
+
 		int opcion;
 		System.out.println("Digite una opcion");
 		opcion = scan.nextInt();
@@ -47,7 +56,13 @@ public class Main {
 			break;
 		}
 		System.out.println("Llego hasta el final");
+
 		scan.close();
+	}
+
+	public static void calculaArea() {
+		lado = 0;
+
 	}
 
 }
